@@ -7,7 +7,7 @@
  
  # Introduction and Problem:
 
- articprotocol.online
+ https://www.articprotocol.online
 
  # Solution:
 
@@ -84,3 +84,14 @@ Al hacer clic en las direcciones de los mineros puedes ver sus Address y ver las
 Token Contract:
 
 Artic Token [0x42cD5De0ba1a8c05d9C79726db57bAeBCF0915Af](https://explorer.testnet.aurora.dev/token/0x42cD5De0ba1a8c05d9C79726db57bAeBCF0915Af/token-transfers)
+
+
+
+IMAGENES PARA EL DOK BORRAR ALV
+
+<img src="./Images/ui1.png">
+<img src="./Images/ui2.png">
+<img src="./Images/jetson1.jpg">
+<img src="./Images/jetson2.png">
+<img src="./Images/general.jpg">
+<img src="./Images/pay2.png">
