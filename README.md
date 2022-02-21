@@ -2,10 +2,12 @@
  AI and Blockchain platform.
 
  Hi!, if you are a judge and want to review the AI model running in GoogleColab here are the notebooks.
- 
+
 [YOLOv3](https://colab.research.google.com/github/altaga/Artic/blob/main/Minner/Python%20AI/YoloV3.ipynb)
  
  # Introduction and Problem:
+
+ articprotocol.online
 
  # Solution:
 
