@@ -4,10 +4,20 @@
  Hi!, if you are a judge and want to review the AI model running in GoogleColab here are the notebooks.
 
 [YOLOv3](https://colab.research.google.com/github/altaga/Artic/blob/main/Minner/Python%20AI/YoloV3.ipynb)
+
+ https://www.articprotocol.online
  
  # Introduction and Problem:
 
- https://www.articprotocol.online
+Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world. Using digital images from cameras and videos and deep learning models, machines can accurately identify and classify objects and then react to what they “see.”
+
+In fact, as the most mature field in modern AI, it is permeating every sector of the economy. The opportunities that automating visual capabilities bring endless market opportunities across every sector. 
+
+The global computer vision market size was valued at $9.45 billion in 2020, and is projected to reach $41.11 billion by 2030, registering a CAGR of 16.0% from 2020 to 2030.
+The main issue with this field is that it is primordially in the hands of certain Big tech incumbents thus it is highly centralized.
+
+We think Near through Aurora and Flux can provide us with the tools to launch a highly decentralized web3 service for Computer Vision with incentives for those who would run our “nodes”.
+
 
  # Solution:
 
