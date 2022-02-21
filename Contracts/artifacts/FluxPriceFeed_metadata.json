@@ -1,0 +1,803 @@
+{
+	"compiler": {
+		"version": "0.8.11+commit.d7f03943"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_validator",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_decimals",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "__description",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "int256",
+						"name": "current",
+						"type": "int256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "roundId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "updatedAt",
+						"type": "uint256"
+					}
+				],
+				"name": "AnswerUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "roundId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "startedBy",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "startedAt",
+						"type": "uint256"
+					}
+				],
+				"name": "NewRound",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint32",
+						"name": "aggregatorRoundId",
+						"type": "uint32"
+					},
+					{
+						"indexed": false,
+						"internalType": "int192",
+						"name": "answer",
+						"type": "int192"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "transmitter",
+						"type": "address"
+					}
+				],
+				"name": "NewTransmission",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "previousAdminRole",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "newAdminRole",
+						"type": "bytes32"
+					}
+				],
+				"name": "RoleAdminChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					}
+				],
+				"name": "RoleGranted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					}
+				],
+				"name": "RoleRevoked",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "DEFAULT_ADMIN_ROLE",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "VALIDATOR_ROLE",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "description",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_roundId",
+						"type": "uint256"
+					}
+				],
+				"name": "getAnswer",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					}
+				],
+				"name": "getRoleAdmin",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint80",
+						"name": "_roundId",
+						"type": "uint80"
+					}
+				],
+				"name": "getRoundData",
+				"outputs": [
+					{
+						"internalType": "uint80",
+						"name": "roundId",
+						"type": "uint80"
+					},
+					{
+						"internalType": "int256",
+						"name": "answer",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startedAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "updatedAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint80",
+						"name": "answeredInRound",
+						"type": "uint80"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_roundId",
+						"type": "uint256"
+					}
+				],
+				"name": "getTimestamp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "grantRole",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "hasRole",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "latestAggregatorRoundId",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "latestAnswer",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "latestRound",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "latestRoundData",
+				"outputs": [
+					{
+						"internalType": "uint80",
+						"name": "roundId",
+						"type": "uint80"
+					},
+					{
+						"internalType": "int256",
+						"name": "answer",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startedAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "updatedAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint80",
+						"name": "answeredInRound",
+						"type": "uint80"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "latestTimestamp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "latestTransmissionDetails",
+				"outputs": [
+					{
+						"internalType": "int192",
+						"name": "_latestAnswer",
+						"type": "int192"
+					},
+					{
+						"internalType": "uint64",
+						"name": "_latestTimestamp",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "renounceRole",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "role",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "revokeRole",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int192",
+						"name": "_answer",
+						"type": "int192"
+					}
+				],
+				"name": "transmit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "typeAndVersion",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "version",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "fluxprotocol.org",
+			"events": {
+				"NewTransmission(uint32,int192,address)": {
+					"params": {
+						"aggregatorRoundId": "the round to which this report was assigned",
+						"answer": "value posted by validator",
+						"transmitter": "address from which the report was transmitted"
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"params": {
+						"__description": "short human-readable description of observable this contract's answers pertain to",
+						"_decimals": "answers are stored in fixed-point format, with this many digits of precision",
+						"_validator": "the initial validator that can post data to this contract"
+					}
+				},
+				"getAnswer(uint256)": {
+					"params": {
+						"_roundId": "the aggregator round of the target report"
+					}
+				},
+				"getRoleAdmin(bytes32)": {
+					"details": "Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}."
+				},
+				"getRoundData(uint80)": {
+					"params": {
+						"_roundId": "target aggregator round. Must fit in uint32"
+					},
+					"returns": {
+						"answer": "answer of report from given _roundId",
+						"answeredInRound": "_roundId",
+						"roundId": "_roundId",
+						"startedAt": "timestamp of block in which report from given _roundId was transmitted",
+						"updatedAt": "timestamp of block in which report from given _roundId was transmitted"
+					}
+				},
+				"getTimestamp(uint256)": {
+					"params": {
+						"_roundId": "aggregator round of target report"
+					}
+				},
+				"grantRole(bytes32,address)": {
+					"details": "Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role."
+				},
+				"hasRole(bytes32,address)": {
+					"details": "Returns `true` if `account` has been granted `role`."
+				},
+				"latestRoundData()": {
+					"returns": {
+						"answer": "answer of latest report",
+						"answeredInRound": "aggregator round of latest report",
+						"roundId": "aggregator round of latest report",
+						"startedAt": "timestamp of block containing latest report",
+						"updatedAt": "timestamp of block containing latest report"
+					}
+				},
+				"latestTransmissionDetails()": {
+					"returns": {
+						"_latestAnswer": "value from latest report",
+						"_latestTimestamp": "when the latest report was transmitted"
+					}
+				},
+				"renounceRole(bytes32,address)": {
+					"details": "Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been revoked `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `account`."
+				},
+				"revokeRole(bytes32,address)": {
+					"details": "Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role."
+				},
+				"supportsInterface(bytes4)": {
+					"details": "See {IERC165-supportsInterface}."
+				},
+				"transmit(int192)": {
+					"params": {
+						"_answer": "latest answer"
+					}
+				}
+			},
+			"stateVariables": {
+				"decimals": {
+					"return": "answers are stored in fixed-point format, with this many digits of precision",
+					"returns": {
+						"_0": "answers are stored in fixed-point format, with this many digits of precision"
+					}
+				}
+			},
+			"title": "Flux first-party price feed oracle",
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"NewTransmission(uint32,int192,address)": {
+					"notice": "indicates that a new report was transmitted"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"description()": {
+					"notice": "human-readable description of observable this contract is reporting on"
+				},
+				"getAnswer(uint256)": {
+					"notice": "answer of report from given aggregator round"
+				},
+				"getRoundData(uint80)": {
+					"notice": "details for the given aggregator round"
+				},
+				"getTimestamp(uint256)": {
+					"notice": "timestamp of block in which report from given aggregator round was transmitted"
+				},
+				"latestAnswer()": {
+					"notice": "answer from the most recent report"
+				},
+				"latestRound()": {
+					"notice": "Aggregator round in which last report was transmitted"
+				},
+				"latestRoundData()": {
+					"notice": "aggregator details for the most recently transmitted report"
+				},
+				"latestTimestamp()": {
+					"notice": "timestamp of block in which last report was transmitted"
+				},
+				"latestTransmissionDetails()": {
+					"notice": "details about the most recent report"
+				},
+				"transmit(int192)": {
+					"notice": "transmit is called to post a new report to the contract"
+				},
+				"version()": {
+					"notice": "aggregator contract version"
+				}
+			},
+			"notice": "Simple data posting on chain of a scalar value, compatible with Chainlink V2 and V3 aggregator interface",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FluxFeed.sol": "FluxPriceFeed"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FluxFeed.sol": {
+			"keccak256": "0x0adb91d2bee62d2bdc1b9fcdb14b7d55a304f008ab116fb459f69025fbeecad2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://47d9480b7856af1ec33117d7ca44461447ec7178f01cf04fb5842e49854e9c99",
+				"dweb:/ipfs/Qma2fTvrdi2H4tw7AjZa9PV6QHmEa66Xjz7kjZpetk3fRK"
+			]
+		},
+		"access/AccessControl.sol": {
+			"keccak256": "0x8bf68bb3bcfad797418ac02bdd1b2033175197e5b34004766e008efa15b4334d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://922fa297b80dc2fa6c009fbbf679b1b18ce9a233be6aa7e980eb460fb2ee849a",
+				"dweb:/ipfs/QmaHwV6GiNgJf5zNBmYmiaRdNN4QuR9BqFM47PDUXLzJck"
+			]
+		},
+		"access/IAccessControl.sol": {
+			"keccak256": "0x59ce320a585d7e1f163cd70390a0ef2ff9cec832e2aa544293a00692465a7a57",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb2c137c343ef0c4c7ce7b18c1d108afdc9d315a04e48307288d2d05adcbde3a",
+				"dweb:/ipfs/QmUxhrAQM3MM3FF5j7AtcXLXguWCJBHJ14BRdVtuoQc8Fh"
+			]
+		},
+		"interface/CLInterface.sol": {
+			"keccak256": "0xb58a39438e7026a4a1a7242a95f4717888320f8d8ada4552cf3a0667ee83f9ab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7f51905209932895db70aa45f32c0d10548b78e5b73de5d4564d944ea8a6af44",
+				"dweb:/ipfs/QmbHYb5iXxfE38HJFpG8vCpfSY9UCArt4H5VsW3VzD9bvH"
+			]
+		},
+		"interface/CLV2V3Interface.sol": {
+			"keccak256": "0x18abc1ea0ed87d246d4a976535986836265ef28f4211459f3b133325ccab902b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8efe3b7258e4d0b4f885d1a888f007a36e4c9bacf42e54ff7d02e20d87100e6a",
+				"dweb:/ipfs/QmTkayGESBB4AXdBPcUwBohNSR3UUQzXR3jNd9XooMhyh1"
+			]
+		},
+		"interface/CLV3Interface.sol": {
+			"keccak256": "0x835b27f6e44db7c58ef91264160dd831059e50434c0f2d1f115e79eda8161fc3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://efccaf62b046547d86661e243323f479101c099153dc37a87b529bbac2ddd10a",
+				"dweb:/ipfs/Qmc4op6DN9Cfs6EXUs4pfuUK5ZyMuagGmm5yW1J1yYf3cQ"
+			]
+		},
+		"utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"utils/Strings.sol": {
+			"keccak256": "0x32c202bd28995dd20c4347b7c6467a6d3241c74c8ad3edcbb610cd9205916c45",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8179c356adb19e70d6b31a1eedc8c5c7f0c00e669e2540f4099e3844c6074d30",
+				"dweb:/ipfs/QmWFbivarEobbqhS1go64ootVuHfVohBseerYy9FTEd1W2"
+			]
+		},
+		"utils/introspection/ERC165.sol": {
+			"keccak256": "0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fb0048dee081f6fffa5f74afc3fb328483c2a30504e94a0ddd2a5114d731ec4d",
+				"dweb:/ipfs/QmZptt1nmYoA5SgjwnSgWqgUSDgm4q52Yos3xhnMv3MV43"
+			]
+		},
+		"utils/introspection/IERC165.sol": {
+			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+			]
+		}
+	},
+	"version": 1
+}
