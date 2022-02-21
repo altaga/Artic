@@ -93,5 +93,5 @@ IMAGENES PARA EL DOK BORRAR ALV
 <img src="./Images/ui2.png">
 <img src="./Images/jetson1.jpg">
 <img src="./Images/jetson2.png">
-<img src="./Images/general.jpg">
+<img src="./Images/general.png">
 <img src="./Images/pay2.png">
