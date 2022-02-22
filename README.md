@@ -1,7 +1,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [<img src="https://img.shields.io/badge/View-Website-blue">](https://www.articprotocol.online) [<img src="https://img.shields.io/badge/View-Video-red">](https://www.youtube.com/watch?v=CvDRBBL-Qbw)
 
 # Artic
-DeAI: Decentralized AI infrastructure. Artic provides Decentralized Computer Vision services where you can mine through Edge Devices, employing Flux oracles and the Near-Aurora Blockchain.
+DeAI: Decentralized AI infrastructure. 
+
+Artic provides Decentralized Computer Vision services where you can mine through Edge Devices, employing Flux oracles and the Near-Aurora Blockchain.
 
  Hi!, if you are a judge and want to review the AI model running in GoogleColab here are the notebooks.
 
