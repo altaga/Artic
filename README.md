@@ -5,7 +5,7 @@ DeAI: Decentralized AI infrastructure.
 
 Artic provides Decentralized Computer Vision services where you can mine through Edge Devices, employing Flux oracles and the Near-Aurora Blockchain.
 
- Hi!, if you are a judge and want to review the AI model running in GoogleColab here are the notebooks.
+ Hi, if you are a judge and want to review the AI model running in GoogleColab here are the notebooks.
 
 [YOLOv3](https://colab.research.google.com/github/altaga/Artic/blob/main/Minner/Python%20AI/YoloV3.ipynb)
 
