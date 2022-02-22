@@ -8,19 +8,109 @@
  https://www.articprotocol.online
  
  
- # Introduction and Problem:
+## Introduction and Problem
 
 Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world. Using digital images from cameras and videos and deep learning models, machines can accurately identify and classify objects and then react to what they “see.”
+
+<img src="https://miro.medium.com/max/800/1*8gmgaAkFdI-9OHY5cA93xQ.png">
+
 
 In fact, as the most mature field in modern AI, it is permeating every sector of the economy. The opportunities that automating visual capabilities bring endless market opportunities across every sector. 
 
 The global computer vision market size was valued at $9.45 billion in 2020, and is projected to reach $41.11 billion by 2030, registering a CAGR of 16.0% from 2020 to 2030.
+
+<img src="https://i.ibb.co/zN8CcnX/AMR.png">
+
+
+Most AI and cloud providers nowadays such as Google cloud, Amazon AWS, Azure and many others offer AI, Machine learning and also to some degree Computer Vision services in their repertoire. One of the recent moves of this industry has been into the adoption of Edge Computing as the demand for computer power increases. Edge computing is computing that takes place at or near the physical location of either the user or the source of the data. By placing computing services closer to these locations, users benefit from faster, more reliable services while companies benefit from the flexibility of hybrid cloud computing. Edge computing is one way that a company can use and distribute a common pool of resources across a large number of locations.
+
+Edge computing is in use today across many industries, including telecommunications, manufacturing, transportation, utilities, and many others. The reasons people implement edge computing are as diverse as the organizations they support.
+
+The key areas that will be forever impacted by AI+Edge computing will be 5G, IoT and Self driving and vehicle communications. 
+
 The main issue with this field is that it is primordially in the hands of certain Big tech incumbents thus it is highly centralized.
 
 We think Near through Aurora and Flux can provide us with the tools to launch a highly decentralized web3 service for Computer Vision with incentives for those who would run our “nodes”.
 
+## Solution
 
- # Solution:
+So our plan is to create what we will call Decentralized AI infrastructure. By providing Decentralized Computer Vision services where you can mine through Edge Devices, employing Flux oracles and the Near-Aurora Blockchain. Thus, making it a true web3 project.
+
+Part of our decision to employ AI Edge devices is the very recent partnership of Flux with Nvidia to run nodes and other applications on Nvidia boards and devices such as the Jetson Nano. And also one of the most important hardware distributors nowadays which is seeed has also joined this play.
+
+<img src="https://s32679.pcdn.co/wp-content/uploads/2022/01/flyx-nvidia-1024x576.png">
+
+We happen to have a lot of history with both companies and we also have a Jetson Nano at hand AND the Machine Learning skills to develop such an idea.
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/jetson1.jpg"> 
+
+## How it's Built
+
+This is the main schematic of our solution:
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/general.png">
+
+So the development has been done in three parts:
+
+### 1. The Near-Aurora blockchain incentive infrastructure and service base:
+The project will be named Artic so we will create a token called TIC to give monetary incentives to people who run our Jetson Nano based nodes. This will include the landing page, UI, Smart Contracts that will be linked to a Flux oracle and so forth. For now we are running a number of Jetson Nano Devices, each of them send to four different Smart contracts the results of their computations using Flux oracles and then this is fed into an Aurora Smart contract and later the main UI.
+
+Here is the landing page:
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ui1.png">
+
+The AI service (Notice the four computations that come from four contracts each):
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ui2.png">
+
+And a temporal Faucet for you to test the system:
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/token2.png">
+
+You can pay for AI services in this other screen through Metamask:
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/pay2.png">
+
+You can see all the Aurora-based smart contracts that run on this layer here, including the ones that come from Flux oracles: https://github.com/altaga/Artic/tree/main/Contracts
+
+Now, while we are speaking about flux...
+
+### 2. Flux Infrastructure.
+
+This infrastructure runs then from the Edge device all the way to Flux oracles and ends with the Aurora Smart contract.
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ai.png">
+
+On our AI service page you can see one of our oracles feeding their contract in real time, you can check all of this directly in the Aurora Explorer.
+
+In this case this oracle obtains its data from the edge processing of images in a jetson nano through the YoloV3 model, this is a practical example of how the oracle could be fed with an AI model.
+
+<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ui2.png">
+
+
+### 3. Edge Device running Machine Learning CV services.
+
+We are using 3 Jetson Nanos to run these services and for this PoC they are running a YoloV3 image classification algorithm that has several use cases including automotive applications.
+
+<https://raw.github.com/altaga/Artic/blob/main/Images/jetson2.png">
+
+You can see an application of that in this video:
+
+Video: Click on the image
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://www.youtube.com/watch?v=yygXL4Zh7i4)
+
+## What's Next:
+
+We think this Proof of concept is a true web3 development that has backing in all the market research provided and the fact that these kind of cloud based services will grow for the forseeable future. Nevertheless we are providing for now just one service with one use case and that is one aspect that we want to improve and also we need to reach users and test if they will use a service such as this one. In that same sense we also need to reach miners or node providers to see if we can reach certain market and truly decentralize these services. For now everything runs smoothly from the Jetson Nanos to Flux oracles and the to Aurora and thus Near. We have seen the huge growth of projects of this kind in examples such as the Helium Network, Arweave and even Flux itself, as the incentives give the network the push from the abyss of the first consumers and infrastructure to reach new hights and be truly decentralized, this is just another exmple on how to weaponize web3 through a very requested service. For now we will keep on working and perhaps in a future Flux can offer through us these kind of AI services anchored on Aurora and the Near protocol. 
+
+## References
+
+https://www.sas.com/en_us/insights/analytics/computer-vision.html
+https://www.precisionag.com/digital-farming/how-computer-vision-is-fast-becoming-the-backbone-of-next-generation-agronomy/
+https://www.alliedmarketresearch.com/computer-vision-market-A12701#:~:text=The%20global%20computer%20vision%20market,around%20it%20just%20like%20humans.
+
+
+ # Apendix I:
 
 Artic es una plataforma decentralizada de Oraculos basados en el procesamiento de AI en Edge.
 
@@ -32,45 +122,45 @@ Artic es una plataforma decentralizada de Oraculos basados en el procesamiento d
 
  ## Landing:
 
- Como parte de la solucion tenemos nuestra pagina de inicio, donde explicamos el proyecto puedes revisar toda nuestra documentacion.
+As part of the solution we have our home page, where we explain the project you can review all our documentation.
 
 <img src="./Images/ui1.png">
 
  ## AI Service:
 
-En nuestra pagina de AI service podras ver uno de nuestros oraculos alimentando a su contrato en tiempo real, todos esto puedes revisando directamente en el Explorer de Aurora.
+On our AI service page you can see one of our oracles feeding their contract in real time, you can check all of this directly in the Aurora Explorer.
 
 <img src="./Images/ai.png">
 
-En este caso este oraculo obtiene sus datos del procesamiento en edge de imagenes en una jetson nano a travez del modelo YOLOv3, este es un ejemplo practico de como podria ser alimentado el oraculo con un modelo de AI.
+In this case this oracle obtains its data from the edge processing of images in a jetson nano through the YOLOv3 model, this is a practical example of how the oracle could be fed with an AI model.
 
 <img src="./Images/ui2.png">
 
 ## TIC Faucet:
 
-Como parte de nuetro sistema, creamos una ERC-20 token con el fin de poder proveer un incentivo para los mineros que se unan a nuestra plataforma de AI.
+As part of our system, we create an ERC20 token in order to provide an incentive for miners to join our AI platform.
 
 <img src="./Images/token.png">
 
-Si quieres obtener algunos token de prueba porfavor entra a la pagina de la Facuet y sigue las intruccines ahi mencionadas.
+If you want to get some test token please go to the Facuet page and follow the instructions mentioned there.
 
 <img src="./Images/token2.png">
 
 ## Payment:
 
-Como parte de las rewards que queremos darle a los mineros por proveer informacion a los oraculos, como proveedores podemos realizar un pago directo de nuestra token desde la pestaña de payment, si quieres probar el mandar algo de TIC a uno de ellos primero revisa la seccion de [Faucet](#tic-faucet)
+As part of the rewards that we want to give to the miners for providing information to the oracles, as providers we can make a direct payment of our token from the payment tab, if you want to try sending some TIC to one of them first check the [Faucet](#tic-faucet)
 
 <img src="./Images/pay.png">
 
-Los botones de Pay son funcionales, prueba el mandar algo de TIC a alguno de los mineros por su buen trabajo.
+Pay buttons are functional, try sending some TIC to some of the miners for their good work.
 
 <img src="./Images/pay2.png">
 
-Al hacer clic en las direcciones de los mineros puedes ver sus Address y ver las interacciones con los nodos directamente.
+By clicking on the addresses of the miners you can see their addresses and see the interactions with the nodes directly.
 
- ## What's next for Artic:
 
- Appendix I:
+
+# Appendix II:
 
  Nodes and Oracles information:
 
@@ -97,12 +187,3 @@ Token Contract:
 Artic Token [0x42cD5De0ba1a8c05d9C79726db57bAeBCF0915Af](https://explorer.testnet.aurora.dev/token/0x42cD5De0ba1a8c05d9C79726db57bAeBCF0915Af/token-transfers)
 
 
-
-IMAGENES PARA EL DOK BORRAR ALV
-
-<img src="./Images/ui1.png">
-<img src="./Images/ui2.png">
-<img src="./Images/jetson1.jpg">
-<img src="./Images/jetson2.png">
-<img src="./Images/general.png">
-<img src="./Images/pay2.png">
