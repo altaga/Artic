@@ -15,6 +15,8 @@ Artic provides Decentralized Computer Vision services where you can mine through
  
  If you need more help and to check our codebase go to [Appendix I](#appendix-I)
  
+ #### All the Smart Contracts codebase (Near-Aurora and Flux) is at: https://github.com/altaga/Artic/tree/main/Contracts
+ 
 ## Introduction and Problem
 
 Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world. Using digital images from cameras and videos and deep learning models, machines can accurately identify and classify objects and then react to what they “see.”
