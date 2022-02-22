@@ -1,12 +1,17 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [<img src="https://img.shields.io/badge/View-Website-blue">](https://www.articprotocol.online) [<img src="https://img.shields.io/badge/View-Video-red">](https://www.youtube.com/watch?v=CvDRBBL-Qbw)
+
 # Artic
- AI and Blockchain platform.
+DeAI: Decentralized AI infrastructure. Artic provides Decentralized Computer Vision services where you can mine through Edge Devices, employing Flux oracles and the Near-Aurora Blockchain.
 
  Hi!, if you are a judge and want to review the AI model running in GoogleColab here are the notebooks.
 
 [YOLOv3](https://colab.research.google.com/github/altaga/Artic/blob/main/Minner/Python%20AI/YoloV3.ipynb)
 
+## To test the product follow this link:
+
  https://www.articprotocol.online
  
+ If you need more help and to check our codebase go to [Appendix I](#appendix-I)
  
 ## Introduction and Problem
 
@@ -110,9 +115,9 @@ https://www.precisionag.com/digital-farming/how-computer-vision-is-fast-becoming
 https://www.alliedmarketresearch.com/computer-vision-market-A12701#:~:text=The%20global%20computer%20vision%20market,around%20it%20just%20like%20humans.
 
 
- # Apendix I:
+ # Appendix I
 
-Artic es una plataforma decentralizada de Oraculos basados en el procesamiento de AI en Edge.
+Artic is a decentralized platform of Oracles based on AI processing at the Edge.
 
  ## System's Architecture:
 
@@ -122,7 +127,7 @@ Artic es una plataforma decentralizada de Oraculos basados en el procesamiento d
 
  ## Landing:
 
-As part of the solution we have our home page, where we explain the project you can review all our documentation.
+As part of the solution we have our home page, where we explain the project and you can review all our documentation.
 
 <img src="./Images/ui1.png">
 
@@ -138,7 +143,7 @@ In this case this oracle obtains its data from the edge processing of images in 
 
 ## TIC Faucet:
 
-As part of our system, we create an ERC20 token in order to provide an incentive for miners to join our AI platform.
+As part of our system, we created an ERC20 token in order to provide an incentive for miners to join our AI platform.
 
 <img src="./Images/token.png">
 
@@ -148,11 +153,11 @@ If you want to get some test token please go to the Facuet page and follow the i
 
 ## Payment:
 
-As part of the rewards that we want to give to the miners for providing information to the oracles, as providers we can make a direct payment of our token from the payment tab, if you want to try sending some TIC to one of them first check the [Faucet](#tic-faucet)
+As part of the rewards that we want to give to the miners for providing information to the oracles. As providers we can make a direct payment of our token from the payment tab, if you want to try sending some TIC to one of them first check the [Faucet](#tic-faucet)
 
 <img src="./Images/pay.png">
 
-Pay buttons are functional, try sending some TIC to some of the miners for their good work.
+The pay buttons are functional, try sending some TIC to some of the miners for their good work.
 
 <img src="./Images/pay2.png">
 
