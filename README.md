@@ -185,6 +185,11 @@ By clicking on the addresses of the miners you can see their addresses and see t
 | Jetson 2   | [0x9F30E32223F72F3c9e509FAEC4C345eCF1fDa2e5](https://explorer.testnet.aurora.dev/address/0x9F30E32223F72F3c9e509FAEC4C345eCF1fDa2e5/transactions) | Motorcycles Detection |
 | Jetson 2   | [0x9d939199329A1deE84d1b29dEC247B0b89b88F32](https://explorer.testnet.aurora.dev/address/0x9d939199329A1deE84d1b29dEC247B0b89b88F32/transactions) | Dogs Detection        |
 | Jetson 2   | [0x5432c58ffF160417E757A78Af9a4360dC4Efb27D](https://explorer.testnet.aurora.dev/address/0x5432c58ffF160417E757A78Af9a4360dC4Efb27D/transactions) | FPS Register          |
+| ZCU104     | [0x019677ec8d776c596124F68753E016687684514D](https://explorer.testnet.aurora.dev/address/0x019677ec8d776c596124F68753E016687684514D/transactions) | Human Detection       |
+| ZCU104     | [0xBbc4C0f5C7f6a15e64B112b496592bf7cDc93f21](https://explorer.testnet.aurora.dev/address/0xBbc4C0f5C7f6a15e64B112b496592bf7cDc93f21/transactions) | Cars Detection        |
+| ZCU104     | [0x65CCD1E9f0d2b4Ddd57c4DB6FC857d8df81DFf41](https://explorer.testnet.aurora.dev/address/0x65CCD1E9f0d2b4Ddd57c4DB6FC857d8df81DFf41/transactions) | Motorcycles Detection |
+| ZCU104     | [0xd7325CB258669F67723468c01ef24cE6b6A7d88d](https://explorer.testnet.aurora.dev/address/0xd7325CB258669F67723468c01ef24cE6b6A7d88d/transactions) | Dogs Detection        |
+| ZCU104     | [0x3988b42F7205893c7551b9a9984A44A076f151F2](https://explorer.testnet.aurora.dev/address/0x3988b42F7205893c7551b9a9984A44A076f151F2/transactions) | FPS Register          |
 | Aggregator | [0xcDff32Cf5616Cb0F8001AA7e57AD103f0dc85dA2](https://explorer.testnet.aurora.dev/address/0xcDff32Cf5616Cb0F8001AA7e57AD103f0dc85dA2/transactions) | Human Detection       |
 | Aggregator | [0x952C57f58B6edbb16eDD376f2E45892c613Ec39B](https://explorer.testnet.aurora.dev/address/0x952C57f58B6edbb16eDD376f2E45892c613Ec39B/transactions) | Cars Detection        |
 | Aggregator | [0x71e4CCA3f245BB7189c866e4a0Fd192128FF82F1](https://explorer.testnet.aurora.dev/address/0x71e4CCA3f245BB7189c866e4a0Fd192128FF82F1/transactions) | Motorcycles Detection |
