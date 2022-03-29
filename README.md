@@ -88,14 +88,19 @@ Now, while we are speaking about flux...
 
 This infrastructure runs then from the Edge device all the way to Flux oracles and ends with the Aurora Smart contract.
 
+Jetson Nano:
+
 <img src="./Images/ai.png">
+
+ZCU104:
+
+<img src="./Images/ai2.png">
 
 On our AI service page you can see one of our oracles feeding their contract in real time, you can check all of this directly in the Aurora Explorer.
 
-In this case this oracle obtains its data from the edge processing of images in a jetson nano through the YoloV3 model, this is a practical example of how the oracle could be fed with an AI model.
+In this case this oracle obtains its data from the edge processing of images in a jetson nano and ZCU104 through the YoloV3 model, this is a practical example of how the oracle could be fed with an AI model.
 
 <img src="./Images/ui2.png">
-
 
 ### 3. Edge Device running Machine Learning CV services.
 
