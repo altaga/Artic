@@ -150,11 +150,21 @@ As part of the solution we have our home page, where we explain the project and 
 
 On our AI service page you can see one of our oracles feeding their contract in real time, you can check all of this directly in the Aurora Explorer.
 
+### Jetson Nano:
+
 <img src="./Images/ai.png">
 
-In this case this oracle obtains its data from the edge processing of images in a jetson nano through the YOLOv3 model, this is a practical example of how the oracle could be fed with an AI model.
+Jetson Nano oracle obtains its data from the edge processing of images in a jetson nano through the YOLOv3 model, this is a practical example of how the oracle could be fed with an AI model.
+
+### ZCU104:
+
+<img src="./Images/ai2.png">
+
+ZCU104 oracle obtains its data from the edge processing of images in a ZCU104 with DPU module through the YOLOv3 inference model, this is a practical example of how the oracle could be fed with an AI model.
 
 <img src="./Images/ui2.png">
+
+https://www.articprotocol.online/demo
 
 ## TIC Faucet:
 
