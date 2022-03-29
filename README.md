@@ -51,13 +51,13 @@ Part of our decision to employ AI Edge devices is the very recent partnership of
 
 We happen to have a lot of history with both companies and we also have a Jetson Nano at hand AND the Machine Learning skills to develop such an idea.
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/jetson1.jpg"> 
+<img src="./Images/jetson1.jpg"> 
 
 ## How it's Built
 
 This is the main schematic of our solution:
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/general.png">
+<img src="./Images/general.png">
 
 So the development has been done in three parts:
 
@@ -66,19 +66,19 @@ The project will be named Artic so we will create a token called TIC to give mon
 
 Here is the landing page:
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ui1.png">
+<img src="./Images/ui1.png">
 
 The AI service (Notice the four computations that come from four contracts each):
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ui2.png">
+<img src="./Images/ui2.png">
 
 And a temporal Faucet for you to test the system:
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/token2.png">
+<img src="./Images/token2.png">
 
 You can pay for AI services in this other screen through Metamask:
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/pay2.png">
+<img src="./Images/pay2.png">
 
 You can see all the Aurora-based smart contracts that run on this layer here, including the ones that come from Flux oracles: https://github.com/altaga/Artic/tree/main/Contracts
 
@@ -88,13 +88,13 @@ Now, while we are speaking about flux...
 
 This infrastructure runs then from the Edge device all the way to Flux oracles and ends with the Aurora Smart contract.
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ai.png">
+<img src="./Images/ai.png">
 
 On our AI service page you can see one of our oracles feeding their contract in real time, you can check all of this directly in the Aurora Explorer.
 
 In this case this oracle obtains its data from the edge processing of images in a jetson nano through the YoloV3 model, this is a practical example of how the oracle could be fed with an AI model.
 
-<img src="https://raw.githubusercontent.com/altaga/Artic/main/Images/ui2.png">
+<img src="./Images/ui2.png">
 
 
 ### 3. Edge Device running Machine Learning CV services.
