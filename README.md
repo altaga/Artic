@@ -99,14 +99,25 @@ In this case this oracle obtains its data from the edge processing of images in 
 
 ### 3. Edge Device running Machine Learning CV services.
 
-We are using 3 Jetson Nanos to run these services and for this PoC they are running a YoloV3 image classification algorithm that has several use cases including automotive applications.
+We are using 2 Jetson Nanos and 1 ZCU104 to run these services and for this PoC they are running a YoloV3 image classification algorithm that has several use cases including automotive applications.
 
-<https://raw.github.com/altaga/Artic/blob/main/Images/jetson2.png">
+Jetson Demo:
+
+<img src="./Images/jetson2.png">
 
 You can see an application of that in this video:
 
 Video: Click on the image
 [![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://www.youtube.com/watch?v=yygXL4Zh7i4)
+
+ZCU104 Demo:
+
+<img src="./Images/zcu104.jpg">
+
+You can see an application of that in this video:
+
+Video: Click on the image
+[![Demo](https://i.ibb.co/g4W3ypx/image.png)](https://youtu.be/Y-GctH4aNCE)
 
 ## What's Next:
 
